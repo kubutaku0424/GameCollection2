@@ -4,3 +4,5 @@ C:\Users\takuy\OneDrive\デスクトップ\Game\Debug\Game.exe
 C:\Users\takuy\OneDrive\デスクトップ\Game\Debug\Game.pdb
 C:\Users\takuy\Desktop\Game\Debug\Game.exe
 C:\Users\takuy\Desktop\Game\Debug\Game.pdb
+C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Debug\Game.exe
+C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Debug\Game.pdb

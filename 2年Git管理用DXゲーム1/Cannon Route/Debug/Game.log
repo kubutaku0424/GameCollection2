@@ -1,7 +1,9 @@
-﻿  Config.cpp
+﻿  BaseScene.cpp
+  Config.cpp
   Game.cpp
+  ISceneChanger.cpp
   main.cpp
   Menu.cpp
   SceneMgr.cpp
   コードを生成中...
-  Game.vcxproj -> C:\Users\takuy\Desktop\Game\Debug\Game.exe
+  Game.vcxproj -> C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Debug\Game.exe
