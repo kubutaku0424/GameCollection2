@@ -1,4 +1,5 @@
 #include "DxLib.h"
+#include "Game.h"
 
 
 void Game_high_Initialize() {

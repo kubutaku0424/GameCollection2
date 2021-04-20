@@ -154,6 +154,7 @@
     <ClCompile Include="Background.cpp" />
     <ClCompile Include="Background_move.cpp" />
     <ClCompile Include="BaseScene.cpp" />
+    <ClCompile Include="Box_Floor.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Game_high.cpp" />
@@ -166,6 +167,7 @@
     <ClInclude Include="Background.h" />
     <ClInclude Include="Background_move.h" />
     <ClInclude Include="BaseScene.h" />
+    <ClInclude Include="BoxFloor.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Game.h" />
     <ClInclude Include="Game_high.h" />
