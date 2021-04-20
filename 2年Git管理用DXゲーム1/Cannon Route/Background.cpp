@@ -1,4 +1,5 @@
 #include "DxLib.h"
+#include "Background.h"
 
 
 void Background_Initialize()

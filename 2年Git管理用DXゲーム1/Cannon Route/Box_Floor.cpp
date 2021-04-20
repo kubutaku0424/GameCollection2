@@ -1,6 +1,15 @@
 #include "DxLib.h"
 #include "Game_high.h"
-int Floor0;
+
+
+typedef struct {
+	int x, y;//ç¿ïWÇÃïœêî
+	int floor_number;
+	int floor_image;
+
+
+
+};
 
 
 
@@ -12,7 +21,7 @@ int Floor0;
 
 
 void Box_Floor_Initialize() {
-	Floor0 = LoadGraph("image/floor0.png");
+
 }
 
 void Box_Floor_Update() {
@@ -20,7 +29,6 @@ void Box_Floor_Update() {
 }
 
 void Box_Floor_Draw() {
-	DrawGraph(20, 20, Floor0, TRUE);
 
 }
 

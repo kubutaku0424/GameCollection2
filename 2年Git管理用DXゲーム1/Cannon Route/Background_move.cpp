@@ -1,5 +1,9 @@
 #include "DxLib.h"
 #include "Game.h"
+#include "Background.h"
+#include "Background_move.h"
+
+
 
 int Background_image1;
 int Background_image2;
