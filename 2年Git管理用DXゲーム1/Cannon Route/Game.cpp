@@ -6,7 +6,7 @@
 int cannon_image;
 //初期化
 void Game_Initialize() {
-    cannon_image= LoadDivGraph("image/cannon.png");    //画像のロード
+    cannon_image= LoadGraph("image/cannon.png");    //画像のロード
 }
 
 //終了処理
@@ -22,7 +22,13 @@ void Game_Update() {
 
 //描画
 void Game_Draw() {
-    DrawGraph(0, 0, cannon_image, TRUE);
+    DrawBox(0, 0, 640, 480, GetColor(255, 255, 255), TRUE);
+
+
+
+
+
+    DrawRotaGraph(120, 400, 0.35,-0.15, cannon_image, TRUE);
     DrawString(0, 0, "ゲーム画面です。", GetColor(255, 255, 255));
     DrawString(0, 20, "Escキーを押すとメニュー画面に戻ります。", GetColor(255, 255, 255));
 }
