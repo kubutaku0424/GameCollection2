@@ -151,20 +151,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Background.cpp" />
     <ClCompile Include="Background_move.cpp" />
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="Config.cpp" />
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Game_high.cpp" />
     <ClCompile Include="ISceneChanger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Background.h" />
     <ClInclude Include="Background_move.h" />
     <ClInclude Include="BaseScene.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Game_high.h" />
     <ClInclude Include="ISceneChanger.h" />
     <ClInclude Include="Menu.h" />
     <ClInclude Include="SceneMgr.h" />
