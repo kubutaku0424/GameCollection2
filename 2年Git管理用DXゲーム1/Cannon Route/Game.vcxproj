@@ -161,6 +161,7 @@
     <ClCompile Include="ISceneChanger.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Menu.cpp" />
+    <ClCompile Include="Player.cpp" />
     <ClCompile Include="SceneMgr.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -173,6 +174,7 @@
     <ClInclude Include="Game_high.h" />
     <ClInclude Include="ISceneChanger.h" />
     <ClInclude Include="Menu.h" />
+    <ClInclude Include="Player.h" />
     <ClInclude Include="SceneMgr.h" />
     <ClInclude Include="Task.h" />
   </ItemGroup>
