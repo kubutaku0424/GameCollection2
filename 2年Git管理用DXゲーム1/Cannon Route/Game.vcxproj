@@ -152,7 +152,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Background.cpp" />
-    <ClCompile Include="Background_move.cpp" />
     <ClCompile Include="BaseScene.cpp" />
     <ClCompile Include="Box_Floor.cpp" />
     <ClCompile Include="Config.cpp" />
@@ -166,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Background.h" />
-    <ClInclude Include="Background_move.h" />
     <ClInclude Include="BaseScene.h" />
     <ClInclude Include="BoxFloor.h" />
     <ClInclude Include="Config.h" />

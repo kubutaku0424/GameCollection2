@@ -2,7 +2,6 @@
 #include "SceneMgr.h"
 #include "DxLib.h"
 #include "Game_high.h"
-#include "Background_move.h"
 
 
 int cannon_image;

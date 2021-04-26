@@ -1,7 +1,6 @@
 #include "DxLib.h"
 #include "Game.h"
 #include "Background.h"
-#include "Background_move.h"
 #include "BoxFloor.h"
 #include "Player.h"
 
