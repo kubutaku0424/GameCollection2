@@ -8,7 +8,7 @@ int Background_image2;
 int Background_image3;
 
 void Background_move_Initialize() {
-	Background_image1 = LoadGraph("image/floor0.png");
+	Background_image1 = LoadGraph("image/Background_image1.png");
 }
 
 
@@ -21,6 +21,6 @@ void Background_move_Update() {
 
 void Background_move_Draw() {
 
-	DrawRotaGraph(100, 200, 1.0, 0, Background_image1, TRUE);
+	DrawModiGraph(0,0,640,0,640,240,0,240,Background_image1, TRUE);
 
 }
