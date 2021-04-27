@@ -1,6 +1,3 @@
-﻿  Background.cpp
-C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Background.cpp(46,13): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Background.cpp(47,16): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Background.cpp(49,13): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
-C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Background.cpp(50,16): warning C4244: '引数': 'float' から 'int' への変換です。データが失われる可能性があります。
+﻿  Game_high.cpp
+C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\BoxFloor.h(14,2): warning C4091: 'typedef ': 変数が何も宣言されていないときは、'Map_t' の左辺を無視します。
   Game.vcxproj -> C:\Users\takuy\GameCollection2\2年Git管理用DXゲーム1\Cannon Route\Debug\Game.exe

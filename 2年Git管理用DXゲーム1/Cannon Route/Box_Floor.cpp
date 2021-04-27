@@ -1,64 +1,51 @@
 #include "DxLib.h"
 #include "Game_high.h"
+#include "BoxFloor.h"
 
+int floor0;
+int floor1;
 
-typedef struct {
-	int floor_box_number;
-	int x, y;//À•W‚Ì•Ï”
-	bool now_status;
-	void Draw();
-	void Update();
-}Map_t;
+Map_t::Map_t() {
+	floor_box_number = 0;
+	x = 0;
+	y = 0;
+	now_status = true;
+};
 
-
-
-Map_t Mapplace[100]={
-
-	{1,0,200,true},
-	{2,20,200,true},
-	{3,40,200,false},
-
-
-
-
-
-
-
-
-
+Map_t::Map_t(int number){
+	floor_box_number = 0;
+	x = 50*number;
+	y = 200;
+	now_status = true;
 
 };
 
 
 void Map_t::Draw() {
+
 	if (now_status == true) {
-		DrawGraph();
+		DrawGraph(x,y,floor0,TRUE);
 
 	}
 	else {
-		DrawGraph();
+		DrawGraph(x,y,floor1,TRUE);
 	}
+}
+
+void Box_Floor_Initialize() {
+	floor0 = LoadGraph("image/floor0.png");
+	floor1 = LoadGraph("image/floor1.png");
 }
 
 void  Map_t::Update() {
 	
-	if (‘å–C‚Ì’e‚ª‚¿‚å‚¤‚Ç‚©‚Ânow_status‚ªfalse‚Ì)
-	{
-		now_status = true;
-	}
+	//if (‘å–C‚Ì’e‚ª‚¿‚å‚¤‚Ç‚©‚Ânow_status‚ªfalse‚Ì)
+	//{
+	//	now_status = true;
+	//}
 }
 
 
-void Box_Floor_Initialize() {
 
-}
-
-void Box_Floor_Update() {
-
-}
-
-void Box_Floor_Draw() {
-
-}
 
 

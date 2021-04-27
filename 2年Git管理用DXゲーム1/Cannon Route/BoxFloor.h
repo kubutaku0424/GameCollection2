@@ -1,8 +1,18 @@
 #pragma once
 void Box_Floor_Initialize();
 
-void Box_Floor_Update();
+typedef struct Map_t{
+public:
 
-void Box_Floor_Draw();
+	int floor_box_number;
+	int x, y;//À•W‚Ì•Ï”
+	bool now_status;
+	Map_t();
+	Map_t(int number);
+	void Draw();
+	void Update();
+};
+
+
 
 
