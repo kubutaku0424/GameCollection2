@@ -13,29 +13,38 @@ int Background_image1;//ã‚Ì”wŒi‚Ì‰æ‘œ
 int Background_image2;//‰º‚Ì”wŒi‚Ì‰æ‘œ
 
 
-
-
 void Background_Initialize()
 {
 
 	move_x_top = 0;//‰Šú‰»
 	move_x_under = 0;//‰Šú‰»
 	
-	Background_image1 = LoadGraph("image/Background1.png");
-	Background_image2 = LoadGraph("image/kumo.png");
+	Background_image1 = LoadGraph("image/Background1.png");//‰æ‘œ‰Šú‰»
+	Background_image2 = LoadGraph("image/kumo.png");//‰æ‘œ‰Šú‰»
 
 }
 
 void Background_Update()
 {
-	move_x_top-=0.5f;
-	move_x_under -= 0.8f;
+	if (move_x_top <= -640) {//ã‚Ì”wŒi‚Ìƒ‹[ƒvˆ—
+		move_x_top = 0;
+    }
+
+	if (move_x_under <= -640) {//‰º‚Ì”wŒi‚Ìƒ‹[ƒvˆ—
+		move_x_under = 0;
+	}
+
+	move_x_top-=0.5f;//ã”wŒi‚ÌˆÚ“®ˆ—
+	move_x_under -= 0.8f;//‰º”wŒi‚ÌˆÚ“®ˆ—
+
 
 }
 
 void Background_Draw() 
 {
-	
 	DrawGraph(0+move_x_top, 0, Background_image1, TRUE);//ã‚Ì”wŒi‰æ‘œ‚Ì•`‰æ
+	DrawGraph(640 + move_x_top, 0, Background_image1, TRUE);//ã‚Ì”wŒi‰æ‘œ(2–‡–Ú)‚Ì•`‰æ
+
 	DrawGraph(0+move_x_under, 280, Background_image2, TRUE);//‰º‚Ì”wŒi‰æ‘œ‚Ì•`‰æ
+	DrawGraph(640 + move_x_under, 280, Background_image2, TRUE);//‰º‚Ì”wŒi‰æ‘œ(2–‡–Ú)‚Ì•`‰æ
 }
