@@ -29,7 +29,6 @@ void Game_high_Update() {
 	Background_Update();
 
 	Playerplace[1].Player_Fall(Mapplace[14].now_status,Mapplace[15].x);
-
 }
 
 void Game_high_Draw() {
@@ -45,15 +44,10 @@ void Game_high_Draw() {
 		Mapplace[i].Draw();
 	}
 
-
 	Playerplace[1].Draw();
 
 	DrawFormatString(30, 30, GetColor(255, 255, 255), "%d", Playerplace[1].y);
-	DrawFormatString(310, 30, GetColor(255, 255, 255), "%d", Mapplace[15].x);
-
-
-
-
+	//DrawFormatString(310, 30, GetColor(255, 255, 255), "%d", Mapplace[12].floor_move);
 
 }
 

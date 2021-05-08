@@ -19,6 +19,7 @@ Map_t::Map_t(int number){//コンストラクタ初期化
 	floor_box_number = 0;
 	x = 50*number;
 	y = 200;
+	floor_move = 0;
 	now_status = true;
 
 };
@@ -26,7 +27,8 @@ Map_t::Map_t(int number){//コンストラクタ初期化
 
 void Map_t::Draw() {//描画関数
 	
-	floor_move -= 0.01f;//地面を動かす
+	floor_move--;
+
 
 	if (now_status == true) {//trueの場合、
 		DrawGraph(x+floor_move,y,floor0,TRUE);

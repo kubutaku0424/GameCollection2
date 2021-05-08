@@ -50,12 +50,11 @@ void Player_s::Draw() {
 
 void Player_s::Player_Fall(bool floor_Judgement,int floor_x) {
 
-	if (floor_Judgement == false&&floor_x<100) {
-		y++;
+	//if (floor_Judgement == false) {
+	//	y++;
 
-	}
-	DrawFormatString(50, 30, GetColor(255, 255, 255), "%d", floor_x);
-
+	//}
+	
 }
 
 
