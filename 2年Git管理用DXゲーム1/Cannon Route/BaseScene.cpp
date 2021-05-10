@@ -11,5 +11,5 @@ void BaseScene::Finalize() {
 }
 
 void BaseScene::Draw() {
-    DrawGraph(0, 0, mImageHandle, FALSE);
 }
+

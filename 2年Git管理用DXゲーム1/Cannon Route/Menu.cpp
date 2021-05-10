@@ -26,7 +26,7 @@ void Menu_Update() {
 
 //描画
 void Menu_Draw() {
-    DrawGraph(0, 0, mImageHandle, FALSE);
+  
     DrawString(0, 0, "メニュー画面です。", GetColor(255, 255, 255));
     DrawString(0, 20, "Gキーを押すとゲーム画面に進みます。", GetColor(255, 255, 255));
     DrawString(0, 40, "Cキーを押すと　設定画面に進みます。", GetColor(255, 255, 255));

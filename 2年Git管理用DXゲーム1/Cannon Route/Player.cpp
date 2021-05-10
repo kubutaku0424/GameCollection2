@@ -2,60 +2,41 @@
 #include "Player.h"
 #include "Game_high.h"
 #include "BoxFloor.h"
+#include <math.h>
+
+int Player_image[24];
+
+double x;//playerのx座標
+double y;//playerのy座標
+
+bool judgment;
 
 
-//変数宣言
-int Player_image[24];//プレイヤーの画像格納変数
-int player_move;//画像分割用変数
-int player_count;//画像変換カウント
-
-//コンストラクタ初期化
-Player_s::Player_s() {
-	x = 60;
-	y = 180;
-
-	player_Collider = 10;
-	player_image = true;
-};
 //初期化
 void Player_Initialize() {
-	player_move = 0;
-	player_count = 0;
-
-
-	LoadDivGraph("image/Player.png", 24, 6, 4, 16, 20, Player_image);//プレイヤー描画
+	x = 20.0;
+	y = 190.0;
+    LoadDivGraph("image/Player.png", 24, 6, 4, 16, 20, Player_image);
+	judgment = false;
 }
-//コンストラクタ描画
-void Player_s::Draw() {
+void Player_Draw() {
+	DrawRotaGraph(x, y,1.5,0, Player_image[0], TRUE);
 
-	player_count++;
-
-	if (player_count % 120 == 0) {//カウントが一定になると処理
-
-		//ぷれいやーの画像分割を進める
-		player_move++;
-	    //リセット
-		player_count = 0;
-	}
-	//プレイヤーの画像分割リセット
-	if (player_move == 3) {
-		player_move = 0;
-	}
-
-	//画像描画の処理
-	if (player_image == true) {
-		DrawGraph(x, y,Player_image[player_move],TRUE);
-	}
 }
 
-void Player_s::Player_Fall(bool floor_Judgement,int floor_x) {
+void Player_Update() {
 
-	//if (floor_Judgement == false) {
-	//	y++;
+}
 
-	//}
+void fall_flag(double fx, double fy,bool now_status) {
+
+	double ans = sqrt((x - fx) * (x - fx) + (y - fy) * (y - fy));
+	if (ans < 20&&now_status==false) {
+		judgment = true;
+	}
+	if (judgment == true) {
+		y+=0.01;
+	}
 	
 }
-
-
 

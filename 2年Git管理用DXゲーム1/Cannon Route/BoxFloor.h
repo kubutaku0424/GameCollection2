@@ -1,20 +1,19 @@
 #pragma once
+
+
+typedef struct {//構造体宣言
+	int now_place;
+	double x, y;
+	bool now_status;
+
+}Map_t;
+
 void Box_Floor_Initialize();//初期化用
 
-//コンストラクタ作成
-typedef struct Map_t{//地面のコンストラクタ
-public:
+void Box_Floor_Draw();
 
-	int floor_box_number;//何番目の画像になるか
-	int floor_move;
-	int x, y;//座標の変数
-	bool now_status;//今の地面の状況
-	Map_t();//コンストラクタ初期化用
-	Map_t(int number);//↑同じく
-	void Draw();//関数作成
-	void Update();//関数作成
+void Box_Floor_Update();
 
-};
 
 
 
